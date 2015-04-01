@@ -24,3 +24,15 @@ student=student+1;
 else if(result==2)
 { 
 failures=failures+1;
+student=student+1;
+}
+}
+//termination phase
+Console.WriteLine();
+Console.WriteLine("Passed:" + passes);
+Console.WriteLine("Failed:" + failures);
+
+if(passes>8)
+Console.WriteLine("Raise Tutition\n");
+}//end of Method Main
+}//end of class Analysis
