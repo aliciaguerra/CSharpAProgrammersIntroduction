@@ -139,4 +139,25 @@ generics, we can create collection classes. To create generic collection, System
 instead of classes such as ArrayList in the System.Collections namespace. Generics promote the usage of parameterized types.
 
 29. What is an object pool in .NET?
-An object pool is a container having objects ready to be used.
+An object pool is a container having objects ready to be used. It tracks the object that is currently in use, total number
+of objects in the pool. This reduces the overhead of creating and re-creating objects.
+
+30. List down the most commonly used types of exceptions in .NET?
+ArgumentException, ArgumentNullException, ArgumentOutofRangeException, ArithmeticException, DivideByZeroException, 
+OverflowException, IndexOutOfRangeException, InvalidCastException, InvalidOperationException, IOEndofStringException, 
+NullReferenceException, OutOfMemoryException, StackOverflowException, etc.
+
+31. What are custom exceptions?
+Sometimes there are some errors that need to be handled as per user requirements. Custom exceptions are used for them and
+are defined exceptions.
+
+32. What are delegates?
+Delegates are same as function pointers in C++ but the only difference is that they are type safe unlike function pointers.
+Delegates are required because they can be used to write much more generic type safe functions.
+
+33. How do you inherit a class into other class in C#?
+Colon is used as an inheritance operator in C#. Just place a colon and then the class name.
+public class DerivedClass : BaseClass
+
+34. What is the base class in .NET from which all classes are derived from?
+System.Object
