@@ -135,4 +135,8 @@ make the resources unusable.
 
 28. What are generics in C#.NET?
 Generics are used to make reusable code classes to decrease the code redudancy, increase type safety, and performance. Using
-generics, we can create collection classes. To create generic collection, System.Collections.Generic namespace
+generics, we can create collection classes. To create generic collection, System.Collections.Generic namespace should be used
+instead of classes such as ArrayList in the System.Collections namespace. Generics promote the usage of parameterized types.
+
+29. What is an object pool in .NET?
+An object pool is a container having objects ready to be used.
