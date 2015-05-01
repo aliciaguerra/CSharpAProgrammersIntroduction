@@ -61,4 +61,53 @@ serializable interface. De-serialization is the reverse process of creating an o
 We can use "this" in a static method because we only use static variables/methods in a static method?
 
 12. What is the difference between constants and read-only?
-Constant variables are declared and initialized at compile-time. The value can' be changed afterwards.
+Constant variables are declared and initialized at compile-time. The value can't be changed afterwards. Read-only variables
+will be initialized only from the static constructor of the class. Read only is used only when we want to assign value at run-time.
+
+13. What is the interface class?
+Interface is an abstract class which has only public abstract methods and the methods only have the declaration and not the 
+definition. These abstract methods must be implemented in the inherited classes.
+
+14. What are value types and reference types?
+Value types are stored in the stack whereas reference types are stored on heap.
+Value types:
+```
+int, enum, byte, decimal, double, float, long
+```
+Reference types:
+```
+string, class, interface, object
+```
+
+15. What are Custom Control and User Control?
+Custom controls are controls generated as compiled code (Dlls), those are easier to use and can be added to toolbox. Developers
+can drag and drop controls to their web forms. Attributes can be set at design time. We can easily add custom controls to 
+Multiple Applications (If Shared Dll's), if they are private then we copy to Dll to bin directory of web application and then add reference to use them.
+User controls are very much similar to ASP include files, and are easy to create. User controls can't be placed in the toolbox
+and dragged - dropped from it. They have their design and code behind. The file extension for user controls is ascx.
+
+16. What are sealed classes in C#?
+We create sealed classes when we want to restrict the class to be inherited. Sealed modifier used to prevent derivation from a 
+class. If we forcefully specify a sealed class as a base class then a compiler-time error occurs.
+
+17. What is method overrloading?
+Method overloading is creating multiple methods with the same name with unique signatures in the same class. When we compile,
+the compiler uses overload resolution to determine the specific method to invoke.
+
+18. What is the difference between array and arraylist?
+In the array, we can have items of the same type only. The size of the array is fixed. An arraylist is similar to an array
+but it doesn't have a fixed size.
+
+19. Can a private virtual method be overriden?
+No, because they are not accessible outside the class.
+
+20. Describe the accessibility modifier "protected internal".
+Protected internal variables/methods are accessible within the same assembly and also from the classes that are derived 
+from this parent class.
+
+21. What are the differences between System.String and System.Test.StringBuilder class?
+System.String is immutable. When we modify the value of a string variable then a new memory is allocated to the new value and
+the previous memory allocation released. System.StringBuilder was designed to have a concept of a mutable string where a variety of operations can be performed without allocation seperate memory location for the modified string.
+
+22. What's the difference between the System.Array.CopyTo() and System.Array.Clone()?
+Using clone() method, 
