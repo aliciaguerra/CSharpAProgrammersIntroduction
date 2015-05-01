@@ -110,4 +110,28 @@ System.String is immutable. When we modify the value of a string variable then a
 the previous memory allocation released. System.StringBuilder was designed to have a concept of a mutable string where a variety of operations can be performed without allocation seperate memory location for the modified string.
 
 22. What's the difference between the System.Array.CopyTo() and System.Array.Clone()?
-Using clone() method, 
+Using Clone() method, we create a new array object containing all the elements in the original array and using CopyTo() method,
+all the elements of the exisiting array copies into another existing array. Both the methods perform a shallow copy.
+
+23. How can we sort the elements of the array into descending order?
+Using sort() methods followed by reverse() method.
+
+24. Write the C# syntax to catch exception?
+To catch an exception, we use try-catch blocks. Catch block can have a parameter of system. Execution type.
+```
+try {
+GetAllData();
+}
+catch(Exception ex)
+{
+}
+```
+25. What is the difference between an interface and an abstract class?
+Interfaces have all the methods having only declaration but no definition. In an abstract class, we can have some concrete 
+methods. In an interface class, all the methods are public. An abstract class may have private methods.
+
+26. What is the difference between Finalize() and Dispose() methods?
+Dispose() is called when we want an object to release any unmanaged sources with them. On the other hand, finalize() is used
+for the same purpose but it doesn't assure the garbage collection of the object.
+
+27. What are circular references?
