@@ -161,3 +161,7 @@ public class DerivedClass : BaseClass
 
 34. What is the base class in .NET from which all classes are derived from?
 System.Object
+
+35. What is the difference between method overriding and method overloading?
+In method overriding, we change the method definition in the derived class that changes the method behavior. Method overloading
+
