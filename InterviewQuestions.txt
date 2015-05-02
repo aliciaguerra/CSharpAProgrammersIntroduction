@@ -164,4 +164,10 @@ System.Object
 
 35. What is the difference between method overriding and method overloading?
 In method overriding, we change the method definition in the derived class that changes the method behavior. Method overloading
+is creating a method with the same name within the same class having different signatures.
 
+36. What are the different ways a method can be overloaded?
+Methods can be overloaded using different data types for parameter, different order of parameters, and different number of
+paramaters.
+
+37. Why can't you specify the accessiblity modifier for methods inside the interface?
