@@ -171,3 +171,12 @@ Methods can be overloaded using different data types for parameter, different or
 paramaters.
 
 37. Why can't you specify the accessiblity modifier for methods inside the interface?
+In an interface, we have virtual methods that do not have method definition. All the methods are there to be overriden in
+the derived class. That's why they are all public.
+
+38. How can we set the class to be inherited, but prevent the method from being over-ridden?
+Declare the class as public and make the method sealed to prevent it from being overridden. 
+
+39. What happens if the inherited interfaces have conflicting method names?
+Implement is up to you as the method is inside your own class. There might be a problem when the methods from different 
+interfaces expect different data, but as far as compiler cares you're okay.
