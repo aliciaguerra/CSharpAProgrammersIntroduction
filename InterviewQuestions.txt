@@ -180,3 +180,7 @@ Declare the class as public and make the method sealed to prevent it from being 
 39. What happens if the inherited interfaces have conflicting method names?
 Implement is up to you as the method is inside your own class. There might be a problem when the methods from different 
 interfaces expect different data, but as far as compiler cares you're okay.
+
+40. What is the difference between a struct and a class?
+Struct are value type variables and classes are reference types. Structs stored on the stack, causes additional overhead 
+but faster retrieval. Structs cannot be inherited.
